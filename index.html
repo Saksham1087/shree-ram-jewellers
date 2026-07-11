@@ -3,113 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shree Ram Jewellers | Premium Fine Artistry</title>
+    <title>Shree Ram Jewellers | Premium Fine Artistry & High Jewelry</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0B0F17; color: #E2E8F0; }
+        body { font-family: 'Inter', sans-serif; background-color: #070A11; color: #E2E8F0; scroll-behavior: smooth; }
         .serif-title { font-family: 'Cinzel', serif; }
-        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%); }
-        .text-gold { color: #D4AF37; }
-        .border-gold { border-color: #AA7C11; }
+        .gold-gradient { background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%); }
+        .gold-glow { box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.2); }
+        .gold-border-hover:hover { border-color: #D4AF37; }
+        .premium-blur { backdrop-filter: blur(16px); background-color: rgba(7, 10, 17, 0.85); }
     </style>
 </head>
-<body class="smooth-scroll">
+<body class="antialiased selection:bg-[#D4AF37] selection:text-black">
 
-    <nav class="border-b border-gray-800 bg-[#0F172A]/90 sticky top-0 z-50 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="serif-title text-xl md:text-2xl font-bold tracking-widest text-white">SHREE RAM<span class="text-gold"> JEWELLERS</span></a>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-medium">
-                <a href="#collections" class="hover:text-gold transition">Collections</a>
-                <a href="#visit" class="hover:text-gold transition">Our Showroom</a>
+    <div class="border-b border-[#D4AF37]/20 bg-gradient-to-r from-[#0B0F19] via-[#161F32] to-[#0B0F19] text-xs py-2 text-center text-gray-300 tracking-widest uppercase px-4 flex justify-center items-center gap-6 overflow-x-auto whitespace-nowrap">
+        <span>✨ Heritage Showroom Live Matrix</span>
+        <span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> 22K Gold: ₹7,245/g</span>
+        <span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> 24K Pure: ₹7,905/g</span>
+    </div>
+
+    <nav class="border-b border-gray-900 sticky top-0 z-50 premium-blur">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="serif-title text-xl md:text-2xl font-medium tracking-[0.25em] text-white">
+                SHREE RAM<span class="text-[#D4AF37] font-semibold block text-[10px] tracking-[0.55em] mt-0.5 text-center">JEWELLERS</span>
+            </a>
+            <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] font-light">
+                <a href="#collections" class="hover:text-[#D4AF37] transition duration-300">The Vault</a>
+                <a href="#experience" class="hover:text-[#D4AF37] transition duration-300">Our Heritage</a>
+                <a href="#visit" class="hover:text-[#D4AF37] transition duration-300">Showroom Coordinates</a>
             </div>
-            <button onclick="openBooking()" class="px-5 py-2 text-xs uppercase tracking-widest border border-gold text-gold font-semibold rounded hover:bg-[#AA7C11] hover:text-white transition">Book Appointment</button>
+            <button onclick="openBooking()" class="px-6 py-2.5 text-[10px] uppercase tracking-[0.2em] border border-[#D4AF37]/50 text-[#D4AF37] font-medium rounded shadow-sm hover:bg-[#D4AF37] hover:text-black transition-all duration-300">Book Private Viewing</button>
         </div>
     </nav>
 
-    <header class="relative py-24 md:py-36 bg-radial from-[#1E293B] to-[#0B0F17] flex items-center justify-center text-center px-6">
-        <div class="max-w-3xl">
-            <span class="text-xs uppercase tracking-widest text-gold font-bold mb-3 block">Pure Heritage Craftsmanship</span>
-            <h1 class="serif-title text-4xl md:text-6xl font-light tracking-wide text-white mb-6 leading-tight">Crafting Gold & Diamond <br><span class="font-bold text-transparent bg-clip-text gold-gradient">Masterpieces</span></h1>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto mb-8 font-light">Welcome to Shree Ram Jewellers. Explore our premium collections of bridal sets, traditional ornaments, and custom contemporary designs built for generational legacies.</p>
-            <a href="#collections" class="px-8 py-3 text-xs uppercase tracking-widest gold-gradient text-white font-bold rounded shadow-lg hover:opacity-90 transition">Explore Collection</a>
+    <header class="relative min-h-[85vh] flex items-center justify-center text-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-20 scale-105 transform transition duration-1000" style="background-image: url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-radial from-transparent to-[#070A11] z-10"></div>
+        
+        <div class="max-w-4xl relative z-20 mt-8">
+            <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-medium mb-4 block">Est. 1994 &bull; Generational Legacy</span>
+            <h1 class="serif-title text-4xl sm:text-5xl md:text-7xl font-extralight tracking-wide text-white mb-8 leading-[1.15]">
+                Sculpting Eternal <br>
+                <span class="font-normal text-transparent bg-clip-text gold-gradient">High Jewelry Artistry</span>
+            </h1>
+            <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-10 font-light leading-relaxed tracking-wide">
+                Exquisite bridal trousseaus, certified solitaire engagement settings, and historic hand-engraved gold pieces forged by master generational craftsmen.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#collections" class="w-full sm:w-auto px-8 py-3.5 text-[11px] uppercase tracking-[0.2em] gold-gradient text-black font-semibold rounded shadow-xl hover:opacity-90 transition duration-300">Examine Collections</a>
+                <a href="#visit" class="w-full sm:w-auto px-8 py-3.5 text-[11px] uppercase tracking-[0.2em] bg-gray-900 border border-gray-800 text-white font-medium rounded hover:bg-gray-800 transition duration-300">Locate Store</a>
+            </div>
         </div>
     </header>
 
-    <section id="collections" class="py-20 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="serif-title text-3xl font-bold text-white tracking-wide">Signature Vault</h2>
-            <div class="w-16 h-0.5 gold-gradient mx-auto mt-4"></div>
+    <section id="collections" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <span class="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37]">Curated Masterpieces</span>
+            <h2 class="serif-title text-3xl font-light text-white tracking-widest mt-2">The Signature Vaults</h2>
+            <div class="w-12 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-[#0F172A] border border-gray-800 rounded-xl overflow-hidden group hover:border-gold/50 transition duration-300">
-                <div class="h-64 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center relative text-6xl">✨</div>
-                <div class="p-6">
-                    <h3 class="serif-title text-xl font-bold text-white mb-1">Bridal Heritage Choker</h3>
-                    <p class="text-xs text-gold font-mono tracking-wider mb-3">22k Pure Yellow Gold</p>
-                    <button onclick="openShowcase('Bridal Heritage Choker', 'Inquiry on 22k Bridal Gold Choker Set')" class="w-full py-2 bg-gray-800 hover:bg-gold hover:text-white transition text-xs uppercase tracking-wider font-semibold rounded">Request Live Details</button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-[#0D1322] border border-gray-900 rounded-lg overflow-hidden group gold-border-hover transition-all duration-500 shadow-xl flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[4/5] bg-gray-950">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=800&auto=format&fit=crop" alt="Bridal Heritage Gold Set" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0D1322] via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-8">
+                    <span class="text-[10px] uppercase tracking-widest text-[#D4AF37] font-mono font-medium block mb-1">Antique Gold / 22K</span>
+                    <h3 class="serif-title text-xl text-white mb-2 font-medium tracking-wide">Bridal Royal Choker</h3>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">Traditional heavy filigree setting paired with signature temple-cut uncut rubies.</p>
+                    <button onclick="openShowcase('Bridal Royal Choker', 'Request configuration analysis for 22k Gold Bridal Trousseau Choker Set')" class="w-full py-3 bg-[#131B2E] border border-gray-800 text-gray-300 text-[10px] uppercase tracking-[0.15em] font-medium rounded hover:bg-[#D4AF37] hover:text-black hover:border-[#D4AF37] transition-all duration-300">Request Vault Details</button>
                 </div>
             </div>
 
-            <div class="bg-[#0F172A] border border-gray-800 rounded-xl overflow-hidden group hover:border-gold/50 transition duration-300">
-                <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-600 flex items-center justify-center relative text-6xl">💎</div>
-                <div class="p-6">
-                    <h3 class="serif-title text-xl font-bold text-white mb-1">Solitaire Diamond Band</h3>
-                    <p class="text-xs text-gold font-mono tracking-wider mb-3">VVS1 Clarity Platinum</p>
-                    <button onclick="openShowcase('Solitaire Diamond Band', 'Inquiry on VVS1 Clarity Solitaire Platinum Ring')" class="w-full py-2 bg-gray-800 hover:bg-gold hover:text-white transition text-xs uppercase tracking-wider font-semibold rounded">Request Live Details</button>
+            <div class="bg-[#0D1322] border border-gray-900 rounded-lg overflow-hidden group gold-border-hover transition-all duration-500 shadow-xl flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[4/5] bg-gray-950">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=800&auto=format&fit=crop" alt="Luxury Solitaire Engagement Ring" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0D1322] via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-8">
+                    <span class="text-[10px] uppercase tracking-widest text-[#D4AF37] font-mono font-medium block mb-1">Platinum / VVS1 D-Color</span>
+                    <h3 class="serif-title text-xl text-white mb-2 font-medium tracking-wide">Imperial Cushion Solitaire</h3>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">Exquisite multi-facet structural placement optimized for high-index refraction metrics.</p>
+                    <button onclick="openShowcase('Imperial Cushion Solitaire', 'Request private viewing for VVS1 D-Color Cushion Cut Engagement Band')" class="w-full py-3 bg-[#131B2E] border border-gray-800 text-gray-300 text-[10px] uppercase tracking-[0.15em] font-medium rounded hover:bg-[#D4AF37] hover:text-black hover:border-[#D4AF37] transition-all duration-300">Request Vault Details</button>
                 </div>
             </div>
 
-            <div class="bg-[#0F172A] border border-gray-800 rounded-xl overflow-hidden group hover:border-gold/50 transition duration-300">
-                <div class="h-64 bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center relative text-6xl">👑</div>
-                <div class="p-6">
-                    <h3 class="serif-title text-xl font-bold text-white mb-1">Imperial Antique Kada</h3>
-                    <p class="text-xs text-gold font-mono tracking-wider mb-3">Hand-engraved Antique Polish</p>
-                    <button onclick="openShowcase('Imperial Antique Kada', 'Inquiry on Antique Polish Handcrafted Kada Bangle')" class="w-full py-2 bg-gray-800 hover:bg-gold hover:text-white transition text-xs uppercase tracking-wider font-semibold rounded">Request Live Details</button>
+            <div class="bg-[#0D1322] border border-gray-900 rounded-lg overflow-hidden group gold-border-hover transition-all duration-500 shadow-xl flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-[4/5] bg-gray-950">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=800&auto=format&fit=crop" alt="Premium Emerald Necklace Set" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0D1322] via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-8">
+                    <span class="text-[10px] uppercase tracking-widest text-[#D4AF37] font-mono font-medium block mb-1">18K White Gold / Zambian Emerald</span>
+                    <h3 class="serif-title text-xl text-white mb-2 font-medium tracking-wide">Zambian Emerald Dewdrop</h3>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">Precision cluster drop arrangement framed inside geometric diamond accent matrices.</p>
+                    <button onclick="openShowcase('Zambian Emerald Dewdrop', 'Request structural metrics for Contemporary Zambian Emerald Drop Assembly')" class="w-full py-3 bg-[#131B2E] border border-gray-800 text-gray-300 text-[10px] uppercase tracking-[0.15em] font-medium rounded hover:bg-[#D4AF37] hover:text-black hover:border-[#D4AF37] transition-all duration-300">Request Vault Details</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="visit" class="py-20 bg-[#0F172A]/50 border-t border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="visit" class="py-24 bg-[#090E1A] border-t border-b border-gray-950">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-                <span class="text-xs uppercase tracking-widest text-gold font-bold mb-2 block">Storefront Coordinates</span>
-                <h2 class="serif-title text-3xl font-bold text-white mb-6">Visit Our Physical Showroom</h2>
-                <p class="text-gray-400 text-sm font-light mb-6 leading-relaxed">Stop by to examine weights, view custom designs in real time, and speak with our jewelry consultants face to face.</p>
-                <div class="space-y-4 text-sm">
-                    <div class="flex items-start space-x-3"><span class="text-gold">📍</span><div><strong class="text-white block">Main Shop Address</strong> Shree Ram Jewellers, Main Market Center Hub</div></div>
-                    <div class="flex items-start space-x-3"><span class="text-gold">🕒</span><div><strong class="text-white block">Operating Cycles</strong> Mon - Sat: 11:00 AM — 08:30 PM</div></div>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Exclusivity Personified</span>
+                <h2 class="serif-title text-3xl font-light text-white mb-6 tracking-wide">Experience the Showroom</h2>
+                <p class="text-gray-400 text-sm font-light mb-8 leading-relaxed tracking-wide">
+                    To maintain an intimate and focused design consultancy session, physical viewings of our high-jewelry collection logs are scheduled strictly by appointment.
+                </p>
+                
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-start space-x-4">
+                        <span class="text-[#D4AF37] p-2 bg-[#131B2E] rounded-md mt-0.5">📍</span>
+                        <div>
+                            <strong class="text-white block font-medium tracking-wide mb-0.5">Flagship Headquarters</strong>
+                            <p class="text-gray-400 font-light">Shree Ram Jewellers, Main Premium Showroom Hub, New Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="text-[#D4AF37] p-2 bg-[#131B2E] rounded-md mt-0.5">🕒</span>
+                        <div>
+                            <strong class="text-white block font-medium tracking-wide mb-0.5">Vault Access Cycles</strong>
+                            <p class="text-gray-400 font-light">Monday – Saturday: 11:00 AM — 08:30 PM (IST)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="w-full h-80 bg-gray-800 border-2 border-gray-700 rounded-2xl overflow-hidden shadow-2xl relative">
-                <iframe class="w-full h-full border-0 grayscale invert opacity-75 hover:opacity-100 transition duration-300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6552943265103!2d72.8193237760002!3d21.166113883060205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e38076ffff7%3A0x673c7ea5a298a002!2sShree%20Ram%20Jewellers!5e0!3m2!1sen!2sin!4v1718490000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            <div class="w-full h-96 bg-gray-950 border border-gray-900 rounded-xl overflow-hidden shadow-2xl relative gold-glow">
+                <iframe class="w-full h-full border-0 grayscale invert contrast-[1.1] brightness-[0.7] opacity-80 hover:opacity-100 transition duration-500" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9796112563345!2d77.1219266!3d28.6303823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0391d3ea67cd%3A0x6eef655e09f2d9c3!2sShree%20Ram%20Jewellers!5e0!3m2!1sen!2sin!4v1710000000000" 
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <div id="bookingModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
-        <div class="bg-[#0F172A] border border-gray-800 max-w-md w-full rounded-2xl p-8 relative">
-            <button onclick="closeBooking()" class="absolute top-4 right-4 text-gray-500 hover:text-white text-lg">✕</button>
-            <h3 id="modalTitle" class="serif-title text-2xl font-bold text-white mb-2">Schedule Private Viewing</h3>
-            <p id="modalDesc" class="text-xs text-gray-400 mb-6 font-light">Register a dedicated slot in our ledger system.</p>
+    <div id="bookingModal" class="fixed inset-0 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4 z-50 transition-all duration-300">
+        <div class="bg-[#090E1A] border border-gray-900 max-w-md w-full rounded-xl p-8 relative shadow-2xl">
+            <button onclick="closeBooking()" class="absolute top-5 right-5 text-gray-500 hover:text-white transition text-sm font-light">✕</button>
+            <h3 id="modalTitle" class="serif-title text-2xl text-white mb-2 tracking-wide">Schedule Private Viewing</h3>
+            <p id="modalDesc" class="text-xs text-gray-400 mb-8 font-light tracking-wide">Register your tracking credentials into our secure ledger database.</p>
             
-            <form id="appointmentForm" class="space-y-4">
+            <form id="appointmentForm" class="space-y-5">
                 <div>
-                    <label class="text-[10px] uppercase tracking-wider text-gray-400 block mb-1 font-bold">Client Name</label>
-                    <input type="text" id="clientName" required class="w-full bg-gray-900 border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold">
+                    <label class="text-[9px] uppercase tracking-[0.2em] text-gray-400 block mb-1.5 font-semibold">Client Name</label>
+                    <input type="text" id="clientName" required class="w-full bg-[#0D1322] border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37] transition">
                 </div>
                 <div>
-                    <label class="text-[10px] uppercase tracking-wider text-gray-400 block mb-1 font-bold">Contact Coordinates</label>
-                    <input type="text" id="clientContact" required class="w-full bg-gray-900 border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold">
+                    <label class="text-[9px] uppercase tracking-[0.2em] text-gray-400 block mb-1.5 font-semibold">Contact Coordinate (Phone/Email)</label>
+                    <input type="text" id="clientContact" required class="w-full bg-[#0D1322] border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37] transition">
                 </div>
                 <div>
-                    <label class="text-[10px] uppercase tracking-wider text-gray-400 block mb-1 font-bold">Appointment Target Date</label>
-                    <input type="date" id="clientDate" required class="w-full bg-gray-900 border border-gray-800 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-gold">
+                    <label class="text-[9px] uppercase tracking-[0.2em] text-gray-400 block mb-1.5 font-semibold">Target Viewing Date</label>
+                    <input type="date" id="clientDate" required class="w-full bg-[#0D1322] border border-gray-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-[#D4AF37] transition">
                 </div>
-                <button type="submit" class="w-full py-3 text-xs uppercase tracking-widest gold-gradient text-white font-bold rounded shadow-lg mt-2">Submit Secure Lead Request</button>
+                <button type="submit" class="w-full py-3.5 text-[10px] uppercase tracking-[0.2em] gold-gradient text-black font-bold rounded shadow-xl mt-4 hover:opacity-90 transition duration-300">Submit Secure Lead Request</button>
             </form>
         </div>
     </div>
@@ -137,8 +188,8 @@
         const form = document.getElementById('appointmentForm');
 
         window.openBooking = function() {
-            mTitle.innerText = "Schedule Showroom Appointment";
-            mDesc.innerText = "Secure a dedicated timeframe window with a showroom consultant.";
+            mTitle.innerText = "Showroom Appointment";
+            mDesc.innerText = "Establish a dedicated secure window with our primary jewelry specialists.";
             modal.style.display = "flex";
         }
 
@@ -156,7 +207,7 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             const payload = {
-                category: mTitle.innerText.includes("Inquire") ? "Product Inquiry" : "Showroom Booking",
+                category: mTitle.innerText.includes("Inquire") ? "Product Vault Inquiry" : "Bespoke Appointment",
                 requestHeader: mTitle.innerText,
                 clientName: document.getElementById('clientName').value,
                 clientContact: document.getElementById('clientContact').value,
@@ -166,11 +217,11 @@
 
             try {
                 await addDoc(collection(db, "storefront_leads"), payload);
-                alert(`✨ Registration Logged! Thank you ${payload.clientName}, your details are securely uploaded to the database.`);
+                alert(`✨ Consultation Slot Reserved! Thank you ${payload.clientName}, our curation desks will align details with you shortly.`);
                 closeBooking();
             } catch (error) {
-                console.error("Firestore transmission error:", error);
-                alert("🛑 Transmission Error: Cloud sync failed.");
+                console.error("Cloud storage error configuration vector:", error);
+                alert("🛑 Database Log Interrupted: Ensure Cloud Firestore is enabled in test mode inside the dashboard console.");
             }
         });
     </script>
